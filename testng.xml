@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SeleniumDockerFramework" verbose="1" parallel="tests">
+    <test name="GoogleHomePage">
+        <parameter name="keyword" value="Docker"/>
+        <parameter name="index" value="2"/>
+        <classes>
+            <class name="TestClasses.GoogleHomeTest"/>
+        </classes>
+    </test>
+    <test name="GoogleSearchResultPage">
+        <classes>
+            <class name="TestClasses.GoogleSearchResultTest"/>
+        </classes>
+    </test>
+</suite>
